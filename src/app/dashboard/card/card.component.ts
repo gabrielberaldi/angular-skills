@@ -40,7 +40,7 @@ export class CardComponent implements OnInit {
     }
 
     onShare(): void {
-        const link: string = "https://www.linkedin.com/in/gabriel-borba-beraldi";
+        const link: string = "https://br.linkedin.com/in/gabriel-borba-beraldi";
         window.open(link, "_blank");
     }
 
