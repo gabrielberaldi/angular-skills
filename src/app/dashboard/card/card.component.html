@@ -1,0 +1,38 @@
+<mat-card class="example-card">
+
+    <mat-card-header class="card-header" style="text-align: center;">
+        <mat-card-title><b>{{card.name}}</b></mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="card-content">
+        <img class="card-img" mat-card-image [src]="card.pic" alt="Photo of a Shiba Inu">
+        <p>
+            {{card.description}}
+        </p>
+        <p>
+            <span fxLayout="row" fxLayoutAlign="none center">
+                <mat-icon [style.color]="likesColor">mood</mat-icon>
+                {{card.likes}}
+            </span>
+        </p>
+    </mat-card-content>
+
+    <mat-card-actions class="card-actions" align="center" fxLayout="row" fxLayoutAlign="space-between">
+
+        <button mat-button (click)="onLike(card)" [style.color]="likesColor">
+            <mat-icon>
+                thumb_up
+            </mat-icon>
+            Like
+        </button>
+
+        <button mat-button (click)="onShare()">
+            <mat-icon>
+                share
+            </mat-icon>
+            Share
+        </button>
+
+    </mat-card-actions>
+
+</mat-card>

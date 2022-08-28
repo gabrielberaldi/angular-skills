@@ -1,0 +1,38 @@
+.example-card {
+    max-width: 400px;
+    max-height: 700px;
+    align-items: center;
+    border: 1px rgb(192, 187, 187) solid;
+    border-radius: 10px;
+    
+    text-align: left;
+}
+
+.example-card:hover{
+    box-shadow: 0 8px 8px 8px rgba(159, 154, 154, 0.2), 0 8px 8px 0 rgba(159, 154, 154, 0.2), 0 8px 8px 0 rgba(159, 154, 154, 0.2) !important;
+    transform: translate3d(0,0,0);
+}
+
+.card-header{
+    border-bottom: 1px rgb(192, 187, 187) solid;
+}
+
+.card-content{
+    margin-top: 23px;
+}
+
+.card-img {
+    height: 250px !important;
+    border-radius: 15px;
+}
+
+.card-actions{
+    border-top: 1px rgb(192, 187, 187) solid;
+}
+
+.card-actions, mat-icon{
+    font-size: 20px !important;
+}
+
+
+
