@@ -25,7 +25,7 @@ import { SkillService } from './services/skills.service';
         MatChipsModule,
         MatCardModule,
         HttpClientModule,
-        InMemoryWebApiModule.forRoot(FakeApiService, { delay: 1 }),
+        InMemoryWebApiModule.forRoot(FakeApiService, { delay: 5000 }),
         MatProgressSpinnerModule,
         FlexLayoutModule,
         MatIconModule,
